@@ -3,58 +3,33 @@ body{
     color: #464646;
     line-height:1.5em;
     font-size: 1em;
-    margin: 0px;
+    margin: 65px 1.5em 0px;
     padding: 0px;
     max-width: 1024px;
 }
 
-body {
-    margin: 65px 1.5em 0px;
-}
 
-#header {
-    background-color: #e3e3e3;
-    width: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    margin: 0px;
-    padding: 0px;
-    height: 45px;
-}
 
 #navbar {
-    /* This is for the grey div */
+    background-color: #e3e3e3;
+    width:100%;
+    float:left;
     color: #333333;
     display:block;
     position:fixed;
-    max-width:1000px;
-}
-
-
-.navlinkTEST{
-    /* float:left;
-    display:inline-block;
-    margin:0 0 0 25px;
-    */
-    display:inline;
+    top: 0;
+    left:0;
+    margin: 0;
+    Padding: 0;
 } 
-
-#navTEST {
-    list-style-type: none;
-    padding: 0;
-    margin:0;
-}
-    
-
-
 
 #navbar ul {
     list-style-type: none;
     display:inline;
     line-height: 40px;
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
+    width:1000px;
 }
 
 
@@ -63,6 +38,9 @@ body {
     display:inline-block;
     margin:0 0 0 25px;
 }
+
+#navbar li:first-child a {
+	border-left: 1px solid #ccc; }
 
 .columns {
     width: 31%;
