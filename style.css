@@ -8,13 +8,11 @@ body{
     max-width: 1024px;
 }
 
-
-
 #navbar {
     background-color: #e3e3e3;
     width:100%;
     float:left;
-    color: #333333;
+    color: #393232;
     display:block;
     position:fixed;
     top: 0;
@@ -29,24 +27,50 @@ body{
     line-height: 40px;
     margin: 0 auto;
     padding: 0px;
-    width:1000px;
+    width: 1000px;
 }
 
-
-#navbar li{
+#navbar ul li{
     float:left;
     display:inline-block;
     margin:0 0 0 25px;
 }
 
-#navbar li:first-child a {
-	border-left: 1px solid #ccc; }
+#navbar ul li a {
+    display: block;
+    color:#8d7cfe;  
+}
+
+#navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#navbar ul li:hover > ul {
+    display:block;
+}
+
+#navbar ul ul li {
+    float: none;
+    position: relative;
+}
 
 .columns {
     width: 31%;
     margin:0 0.5em;
     padding: 0px;
-    position:relative;
     display: inline-block;
     z-index:-1;
+}
+
+p.clear{
+    clear:right;
+}
+
+img {
+    width: 30%;
+    float:right;
+    align-content:center;
+    margin:10px;
 }
