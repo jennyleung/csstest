@@ -5,55 +5,68 @@ body{
     font-size: 1em;
     margin: 65px 1.5em 0px;
     padding: 0px;
-    max-width: 1024px;
 }
 
+/* menu */
 #navbar {
     background-color: #e3e3e3;
     width:100%;
-    float:left;
     color: #393232;
-    display:block;
     position:fixed;
     top: 0;
-    left:0;
-    margin: 0;
-    Padding: 0;
+    left: 0;
+    padding: 10px 0;
 } 
 
 #navbar ul {
     list-style-type: none;
-    display:inline;
-    line-height: 40px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
     width: 1000px;
 }
 
-#navbar ul li{
-    float:left;
-    display:inline-block;
-    margin:0 0 0 25px;
+#navbar li {
+    padding: 0;
+    float: left;
+    margin: 0 0 0 25px;
+    position: relative;
+}
+
+#navbar li:first-child {
+    margin: 0;
 }
 
 #navbar ul li a {
     display: block;
-    color:#8d7cfe;  
+    color:#8d7cfe;
 }
 
-#navbar ul ul {
+/* submenu */
+#navbar ul li ul {
     display: none;
     position: absolute;
-    top: 100%;
+    left: 0;
+    top: 34px;
+    background-color:#eeeeee;
+    width: auto;
+}
+
+#navbar .submenu li {
+    margin: 0 
+}
+
+.submenu li a {
+    padding: 10px;
+    white-space: nowrap;
 }
 
 #navbar ul li:hover > ul {
-    display:block;
+    display: block;
 }
 
-#navbar ul ul li {
-    float: none;
-    position: relative;
+.container {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .columns {
