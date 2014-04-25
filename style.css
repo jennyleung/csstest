@@ -15,7 +15,6 @@ body{
     position:fixed;
     top: 0;
     left: 0;
-    padding: 10px 0;
 } 
 
 #navbar ul {
@@ -27,18 +26,17 @@ body{
 
 #navbar li {
     padding: 0;
-    float: left;
-    margin: 0 0 0 25px;
-    position: relative;
-}
-
-#navbar li:first-child {
     margin: 0;
+    float: left;
+    position: relative;
+    display: block;
+    margin: 0 25px 0 0;
 }
 
 #navbar ul li a {
     display: block;
     color:#8d7cfe;
+    padding: 10px;
 }
 
 /* submenu */
@@ -46,18 +44,20 @@ body{
     display: none;
     position: absolute;
     left: 0;
-    top: 34px;
+    top: 42px;
     background-color:#eeeeee;
     width: auto;
 }
 
 #navbar .submenu li {
-    margin: 0 
+    margin: 0; 
+    float: none;
 }
 
-.submenu li a {
-    padding: 10px;
+#navbar .submenu li a {
     white-space: nowrap;
+    display: block;
+    width: auto;
 }
 
 #navbar ul li:hover > ul {
